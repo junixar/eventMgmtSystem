@@ -8,16 +8,16 @@ import java.time.LocalDateTime;
 public class Event {
 
 	private LocalDateTime start;
-	
+
 	private LocalDateTime end;
-	
+
 	private String organizer;
-	
+
 	private String title;
-	
+
 	private String description;
-	
-    public Event(LocalDateTime start, LocalDateTime end, String organizer, String title, String description) {
+
+	public Event(LocalDateTime start, LocalDateTime end, String organizer, String title, String description) {
 		this.start = start;
 		this.end = end;
 		this.organizer = organizer;
