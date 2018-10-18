@@ -2,6 +2,9 @@ package ems.domain;
 
 import java.time.LocalDateTime;
 
+/**
+ * Data object for event.
+ */
 public class Event {
 
 	private LocalDateTime start;
@@ -14,6 +17,9 @@ public class Event {
 	
 	private String description;
 
+//ublic Event (LocalDateTime start, LocalDateTime end, String organizer, String title) {
+//todo
+//
 	public LocalDateTime getStart() {
 		return start;
 	}
@@ -53,7 +59,5 @@ public class Event {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	
-
 
 }
