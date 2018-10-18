@@ -9,6 +9,7 @@ import org.mockito.InjectMocks;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import ems.domain.Event;
+import ems.domain.EventManager.InvalidEventException;
 import ems.domain.EventManagerImpl;
 
 @RunWith(MockitoJUnitRunner.class)
@@ -28,8 +29,14 @@ public class EventManagerImplTest {
 				LocalDateTime.now().minusDays(2), //
 				LocalDateTime.now().minusDays(1), //
 				"organizer", "Erstes Event", "Beispiel...");
-		
-		sut.create(event);
+		try
+		{
+			sut.create(event);
+		}
+		catch(InvalidEventException ex)
+		{
+			
+		}
 	}
 	
 	@Test
