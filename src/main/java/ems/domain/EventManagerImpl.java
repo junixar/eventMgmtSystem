@@ -5,8 +5,7 @@ import java.time.LocalDateTime;
 public class EventManagerImpl implements EventManager {
 
 	public Event build(LocalDateTime start, LocalDateTime end, String organizer, String title, String description) {
-		// TODO Auto-generated method stub
-		return null;
+		return new Event(start, end, organizer, title, description);
 	}
 
 	public void create(Event event) {
@@ -15,7 +14,7 @@ public class EventManagerImpl implements EventManager {
 	}
 	
 	public Event newEvent(LocalDateTime start, LocalDateTime end, String organizer) {
-		return null;
+		return build (start, end, organizer, null, null);
 	}
 
 }

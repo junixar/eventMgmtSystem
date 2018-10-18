@@ -39,7 +39,7 @@ public class EventManagerImplTest {
 				LocalDateTime.now().plusDays(2), //
 				"organizer");
 		
-		assertThat(resultEvent).isNull();
+		assertThat(resultEvent).isNotNull();
 	}
 	
 
