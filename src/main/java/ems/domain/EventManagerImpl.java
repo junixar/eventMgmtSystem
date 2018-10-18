@@ -13,5 +13,9 @@ public class EventManagerImpl implements EventManager {
 		// TODO Auto-generated method stub
 
 	}
+	
+	public Event newEvent(LocalDateTime start, LocalDateTime end, String organizer) {
+		return null;
+	}
 
 }
