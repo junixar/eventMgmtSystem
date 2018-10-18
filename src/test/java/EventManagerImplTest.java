@@ -22,15 +22,14 @@ public class EventManagerImplTest {
 		fail("Not yet implemented");
 	}
 
-	@Test
+	@Test 
 	public void test_CreateFailIfDateNotInFuture() {
 		Event event = new Event(//
-				LocalDateTime.now().plusDays(1), //
-				LocalDateTime.now().plusDays(2), //
+				LocalDateTime.now().minusDays(2), //
+				LocalDateTime.now().minusDays(1), //
 				"organizer", "Erstes Event", "Beispiel...");
 		
-
-		fail("Not yet implemented");
+		sut.create(event);
 	}
 	
 	@Test
