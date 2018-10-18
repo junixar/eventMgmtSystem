@@ -15,7 +15,7 @@ public class EventManagerImpl implements EventManager {
 	 * Otherwise exception will be thrown.
 	 * 
 	 */
-	public void create(Event event) {
+	public void create(Event event) throws InvalidEventException {
 		// TODO Auto-generated method stub
 
 	}
