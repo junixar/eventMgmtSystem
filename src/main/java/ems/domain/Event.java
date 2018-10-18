@@ -16,10 +16,15 @@ public class Event {
 	private String title;
 	
 	private String description;
+	
+    public Event(LocalDateTime start, LocalDateTime end, String organizer, String title, String description) {
+		this.start = start;
+		this.end = end;
+		this.organizer = organizer;
+		this.title = title;
+		this.description = description;
+	}
 
-//ublic Event (LocalDateTime start, LocalDateTime end, String organizer, String title) {
-//todo
-//
 	public LocalDateTime getStart() {
 		return start;
 	}
